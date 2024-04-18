@@ -86,7 +86,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--primary-text-alternative);
+    color: var(--primary-text-alternative);flex-wrap: wrap;
 }
 
 .subheader-menu {
@@ -94,7 +94,7 @@ img {
     font-size: 12px;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem;flex-wrap: wrap;
 }
 
 /* main-header */
@@ -102,7 +102,7 @@ img {
 .main-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;flex-wrap: wrap;
 }
 
 
@@ -212,8 +212,14 @@ img {
     flex-direction: column;
     padding: 5rem 0;
 }
-
-
+.sku-container div img{
+    width: 50px;height: 50px;
+}
+.sku-container div p
+{
+    text-align: center;
+    margin: 10px;
+}
 /* services */
 .service-section {
     background: url(images/services.png);
@@ -524,14 +530,10 @@ footer {
 .right-side-btn-div a {
     color: var(--primary-variant);
     padding: 1.2rem;
-
+text-decoration: none;
 }
-
-.right-side-btn-div a:nth-child(1) {
-    border-right: 1px solid #000;
-}
-
-
+.social img{
+margin: 0 5px;}
 
 
 
@@ -607,6 +609,11 @@ footer {
         padding: .75rem 1rem;
         font-size: 14px;
     }
+
+    .whyChooseUs {
+        background-position: center;
+    }
+
 }
 
 @media screen and (max-width:991px) {
@@ -619,9 +626,6 @@ footer {
         margin: 0.5rem 0;
     }
 
-    .whyChooseUs {
-        background-position: center;
-    }
 
     .recent-projects-inner {
         grid-template-columns: 1fr;
@@ -632,18 +636,151 @@ footer {
         justify-content: center;
         margin: 2rem 0;
     }
+
     .connect-us-inner {
         padding: 2rem 0;
     }
+
     .connect-form-col {
         margin-top: 0rem !important;
         margin-bottom: 4rem !important;
     }
+
     .connect-form-col {
         margin-top: 0rem !important;
         margin-bottom: 4rem !important;
     }
+
     .connect-form form {
         width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 48px !important;
+    }
+
+    h2 {
+        font-size: 36px !important;
+    }
+
+    h3 {
+        font-size: 24px !important;
+    }
+
+    h4 {
+        font-size: 16px !important;
+    }
+
+    .banner {
+        padding: 2rem 0 8rem 0;
+    }
+
+    .contact-form {
+        padding: 1.5rem !important;
+    }
+
+    .contact-form-input {
+        margin: 0 0 1rem 0;
+    }
+
+    .whyChooseUs .sku-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sku-containerone div {
+        padding: 1.5rem 2rem;
+    }
+
+    .sku-containerone {
+        margin: 0rem 0 -5rem 0;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+
+
+    .sku-containerone p {
+        font-size: 14px;
+    }
+
+    .connect-form {
+        padding: 1rem 1rem;
+    }
+
+    .aboutus-box-section {
+        flex-wrap: wrap;
+    }
+
+    .connect-us-inner {
+        padding: 1rem 0;
+    }
+
+    .testimonial-inner-div {
+        padding: 4rem 2rem 2rem;
+    }
+
+    .investors-div h2 {
+        margin: 0 0 1rem 0;
+    }
+
+    .quote {
+        height: auto;
+    }
+
+    .investors-inner-div {
+        padding: 3rem 2rem;
+        margin: 1rem 0;
+    }
+
+    .right-side-small {
+        flex-wrap: wrap;
+    }
+
+
+    .right-side-small img {
+        height: auto;
+    }
+
+    .counter-div {
+        overflow: scroll;
+    }
+
+    .contact-form-head {
+        flex-wrap: wrap;
+    }
+
+    .service-section {
+        padding: 7rem 0 3rem 0;
+    }
+
+    .services-container div:nth-child(1) {
+        grid-column: 1;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-container div .hover-box {
+        top: 0;
+        background: #000000b5;
+    }
+
+    .aboutus-section {
+        background: var(--light-bg);
+    }
+
+    .subheader-menu p {
+
+        margin: 0;
+
+    }
+    .main-header{
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    .main-header .box img{
+        width: 30px;
     }
 }
