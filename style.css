@@ -623,7 +623,7 @@ footer {
         align-items: flex-start;
         gap:3rem;
     }
-    .recent-projects{gap: 1rem;padding: 3rem 0;}
+    .recent-projects{gap: 1rem;padding: 0 0 3rem;}
     .recent-projects-img{
         position: relative;
     }
@@ -640,6 +640,8 @@ footer {
         right: 0;
         font-size: 18px;
     }
+    .primary-button-small{
+    padding: 0.5rem 1rem !important;}
 /* project-section */
 
 
