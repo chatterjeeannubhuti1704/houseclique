@@ -53,6 +53,9 @@ h5 {
     font-size: 16px !important;
     font-weight: 200 !important;
 }
+h5 strong{
+    font-size: 24px !important;
+}
 
 .hover-box p,
 .subfooter a,
